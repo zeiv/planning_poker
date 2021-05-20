@@ -1,0 +1,28 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import 'cards';
+@import 'team_vote';
+@import 'poker_table';
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      &:hover {
+        color: hsla(0, 0%, 0%, 1);
+      }
+    }
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  background-color: $light;
+}
+
+.root-container {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+}

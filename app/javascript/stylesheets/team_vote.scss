@@ -1,0 +1,40 @@
+[data-react-class="TeamVote"] {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  .hand-container {
+    display: flex;
+    height: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    .hand {
+      display: flex;
+      .card-wrapper {
+        margin-right: 1rem;
+        .card-container {
+          width: 3.2rem;
+          height: 4.48rem;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover:not(.disabled) {
+          transform: translateY(-0.4rem);
+        }
+        &.active {
+          transform: translateY(-0.4rem);
+        }
+      }
+    }
+
+    .vote-statistics {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

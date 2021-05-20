@@ -1,0 +1,9 @@
+<header class="row">
+  <h1 class="col-12 fs-2 text-center">
+    <%= @team.name %>
+  </h1>
+</header>
+
+<%= react_component('TeamVote', {
+  teamId: @team.id
+}) %>
