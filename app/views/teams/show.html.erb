@@ -5,5 +5,8 @@
 </header>
 
 <%= react_component('TeamVote', {
-  teamId: @team.id
+  teamID: @team.id,
+  currentUserID: current_user.id,
+  currentUserFirstName: current_user.first_name,
+  currentUserLastName: current_user.last_name
 }) %>

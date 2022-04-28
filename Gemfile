@@ -25,9 +25,13 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+gem 'anycable-rails', '~> 1.0'
 gem 'devise'
+gem 'dotenv-rails'
+gem 'fastball'
 gem 'friendly_id', '~> 5.4.0'
 gem 'react-rails'
+gem 'redis'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -40,6 +44,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'anycable-rack-server', require: false
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'

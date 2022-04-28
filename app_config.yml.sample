@@ -1,0 +1,18 @@
+---
+app_environment: development
+host_environment: development
+secret_key_base: adcaf48480077e3cb181183dc0c4ed6eab0f98e8c6fc18fa3fdb010401d2e2499ac107d40bad9d11d2a3f1b4db4acb682626efde9b07a62edd9c2f3f42b588f9
+
+redis_url: "redis://localhost:6379"
+actioncable_url: ws://localhost:4001/cable
+
+db:
+  host: localhost
+  database: planning_poker_development
+  username: root
+  password: ''
+test_db:
+  host: localhost
+  database: planning_poker_test
+  username: root
+  password: ''

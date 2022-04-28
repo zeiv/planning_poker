@@ -34,3 +34,13 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Fastball config Stuff
+app_config.yml
+.env
+config/cable.yml
+config/anycable.yml
+config/secrets.yml
+config/database.yml
+config/newrelic.yml
+config/honeybadger.yml
